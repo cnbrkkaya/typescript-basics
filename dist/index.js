@@ -1,22 +1,22 @@
 "use strict";
 //Basic Types
 let id = 5;
-let company = 'CK';
+let company = "CK";
 let isValid = true;
-let x = 'Hello';
+let x = "Hello";
 let ids = [1, 2, 3, 4, 5];
-let arr = [1, 2, 'ck', false];
+let arr = [1, 2, "ck", false];
 //Tuple
-let person = [1, 'ck', true];
+let person = [1, "ck", true];
 //Tuple Array
 let employee;
 employee = [
-    [1, 'CK'],
-    [2, 'AA'],
+    [1, "CK"],
+    [2, "AA"],
 ];
 //Union
 let pid;
-pid = '5';
+pid = "5";
 //Enum
 var Direction1;
 (function (Direction1) {
@@ -34,7 +34,7 @@ var Direction2;
 })(Direction2 || (Direction2 = {}));
 const user = {
     id: 1,
-    name: 'CK',
+    name: "CK",
 };
 //Type Assertion
 let cid = 1;
@@ -52,7 +52,7 @@ function log(message) {
 }
 const newUser = {
     id: 1,
-    name: 'CK',
+    name: "CK",
 };
 const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
@@ -65,7 +65,7 @@ class Person {
         return `${this.name} is registered`;
     }
 }
-const ck = new Person(11, 'CK');
+const ck = new Person(11, "CK");
 console.log(ck.register());
 //Subclass
 class Employee extends Person {
@@ -74,12 +74,13 @@ class Employee extends Person {
         this.position = position;
     }
 }
-const newEmp = new Employee(111, 'CKE', 'Dev');
+const newEmp = new Employee(111, "CKE", "Dev");
 console.log(newEmp.register());
 //Generics
 function getArray(items) {
     return new Array().concat(items);
 }
 let numArray = getArray([1, 2, 3, 4, 5]);
-let strArray = getArray(['sdfsdf', 'sdfsdf', 'sdfsdf']);
-strArray.push('dfgdf');
+let strArray = getArray(["sdfsdf", "sdfsdf", "sdfsdf"]);
+strArray.push("dfgdf");
+const a = 4;
